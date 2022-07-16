@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 import '../widgets/header.dart';
+import '../widgets/login.dart';
 
 class AuthenticationScreen extends StatelessWidget {
-  const AuthenticationScreen ({super.key});
+  const AuthenticationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: const [
-          Header(),
-          Text("defaultPage"),
-          Text("Menu"),
-        ],
-      )
-    );
+        backgroundColor: const Color.fromARGB(255, 252, 228, 198),
+        body: Column(
+          children: const [Header(), Login()],
+        ));
   }
 }
